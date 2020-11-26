@@ -24,11 +24,12 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    Camera cam;
 
     // Start is called before the first frame update
     void Start()
     {
- 
+        cam = Camera.main;
         
     }
 
@@ -105,11 +106,22 @@ public class PlayerMovement : MonoBehaviour
 
         movement.SetFloat("Speed", (move * speed).magnitude);
 
-        if (GameObject.FindGameObjectWithTag("chest") && Input.GetKeyDown(KeyCode.F))
-        {
-            
-        }
+
  
-        
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 100))
+            {
+                Debug.Log("We hit" + hit.collider.name + " " + hit.point);
+            }
+
+        }
+
+
+
+
     }
 }

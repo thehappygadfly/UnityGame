@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class crate : MonoBehaviour
 {
-    public string InteractText { get; private set; }
-
     private bool mIsOpen = false;
-    public void OnInteract()
+
+     void OnTriggerStay()
     {
-        InteractText = "Press F to open ";
+        if (Input.GetKey(KeyCode.E))
+        {
+            mIsOpen = !mIsOpen;
 
-        mIsOpen = !mIsOpen;
-        InteractText = mIsOpen ? "to close" : "to open";
-
-        GetComponent<Animator>().SetBool("open", mIsOpen);
+            GetComponent<Animator>().SetBool("open", mIsOpen);
+        }
     }
 
 
