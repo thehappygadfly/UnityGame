@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class crate : PlayerMovement
+public class crate : MonoBehaviour
 {
     public string InteractText { get; private set; }
 
     private bool mIsOpen = false;
-    public override void OnInteract()
+    public void OnInteract()
     {
         InteractText = "Press F to open ";
 

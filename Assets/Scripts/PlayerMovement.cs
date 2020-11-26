@@ -107,10 +107,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (GameObject.FindGameObjectWithTag("chest") && Input.GetKeyDown(KeyCode.F))
         {
-            public virtual void OnInteract()
-            { }
+            
         }
  
-
+        
     }
 }
