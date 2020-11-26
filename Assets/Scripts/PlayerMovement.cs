@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
     public CharacterController controller;
     public Transform groundCheck;
+    
 
     public LayerMask groundmask;
     public float groundDistance = 0.4f;
@@ -17,13 +19,16 @@ public class PlayerMovement : MonoBehaviour
     private float rotateSpeed = 10f;
 
     public Animator movement;
+    public Animator woodchest;
 
     Vector3 velocity;
     bool isGrounded;
 
+
     // Start is called before the first frame update
     void Start()
     {
+ 
         
     }
 
@@ -99,5 +104,13 @@ public class PlayerMovement : MonoBehaviour
         transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
 
         movement.SetFloat("Speed", (move * speed).magnitude);
+
+        if (GameObject.FindGameObjectWithTag("chest") && Input.GetKeyDown(KeyCode.F))
+        {
+            public virtual void OnInteract()
+            { }
+        }
+ 
+
     }
 }

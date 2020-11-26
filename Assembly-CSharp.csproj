@@ -57,9 +57,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\thirdpersoncameracontroller.cs" />
+    <Compile Include="Assets\Scripts\crate.cs" />
+    <Compile Include="Assets\Scripts\InventoryItemBase.cs" />
     <Compile Include="Assets\Scripts\CameraTurn.cs" />
     <Compile Include="Assets\Scripts\FollowTarget.cs" />
-    <Compile Include="Assets\Scripts\thirdpersoncameracontroller.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
