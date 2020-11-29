@@ -107,21 +107,6 @@ public class PlayerMovement : MonoBehaviour
         movement.SetFloat("Speed", (move * speed).magnitude);
 
 
- 
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100))
-            {
-                Debug.Log("We hit" + hit.collider.name + " " + hit.point);
-            }
-
-        }
-
-
-
 
     }
 }

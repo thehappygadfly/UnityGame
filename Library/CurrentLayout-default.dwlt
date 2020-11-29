@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1480
     height: 734.4
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Animator
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -146,10 +146,10 @@ MonoBehaviour:
     y: 30
     width: 1480
     height: 684.4
-  m_MinSize: {x: 679, y: 342}
-  m_MaxSize: {x: 12004, y: 8042}
+  m_MinSize: {x: 678, y: 342}
+  m_MaxSize: {x: 12003, y: 8042}
   vertical: 0
-  controlID: 108
+  controlID: 281
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 342}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 17
+  controlID: 282
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: GameView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -196,14 +196,14 @@ MonoBehaviour:
     height: 390.4
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 13}
   - {fileID: 12}
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ConsoleWindow
+  m_Name: AnimatorControllerTool
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -225,13 +225,13 @@ MonoBehaviour:
     height: 294.00003
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 11}
+  m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 18}
   - {fileID: 11}
   - {fileID: 16}
-  m_Selected: 1
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -251,8 +251,8 @@ MonoBehaviour:
     y: 0
     width: 276
     height: 684.4
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -352,18 +352,18 @@ MonoBehaviour:
       y: 21
       width: 1001.2
       height: 348.4
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 500.6, y: 174.19994}
+    m_Scale: {x: 0.885293, y: 0.88529295}
+    m_Translation: {x: 500.6, y: 187.96748}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -500.6
-      y: -174.19994
-      width: 1001.2
-      height: 348.4
+      x: -565.4625
+      y: -212.32236
+      width: 1130.925
+      height: 393.54205
     m_MinimalGUI: 1
   m_defaultScale: 0.56705725
   m_LastWindowPixelSize: {x: 1251.5, y: 461.75}
@@ -408,9 +408,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 47.65294, y: 1.8313663, z: -29.396547}
+    m_Target: {x: 49.92336, y: 0.31902725, z: -29.42436}
     speed: 2
-    m_Value: {x: 47.65294, y: 1.8313663, z: -29.396547}
+    m_Value: {x: 49.92336, y: 0.31902725, z: -29.42436}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -457,13 +457,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.05459036, y: 0.9264745, z: -0.14799397, w: 0.34175757}
+    m_Target: {x: 0.04449927, y: 0.9368558, z: -0.12954053, w: 0.32183242}
     speed: 2
-    m_Value: {x: 0.05458939, y: 0.92645806, z: -0.14799134, w: 0.3417515}
+    m_Value: {x: 0.044498473, y: 0.93683904, z: -0.12953822, w: 0.32182667}
   m_Size:
-    m_Target: 2.937599
+    m_Target: 3.366111
     speed: 2
-    m_Value: 2.937599
+    m_Value: 3.366111
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -569,6 +569,7 @@ MonoBehaviour:
     - {fileID: 110700000, guid: 64e2ef14a02f69a4b94edbee54ca296a, type: 2}
     - {fileID: 7128650140284947962, guid: 2d8542ca8e4d54b5fafef2f07cea4d26, type: 2}
     - {fileID: 1107000011326230458, guid: 23e29e25d0f016847a74ddbd1df5b7a1, type: 2}
+    - {fileID: -3550293144506300519, guid: fe28e76ea91a7f84eb953bd7f98abf2b, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.5565
       e01: 0
@@ -602,14 +603,30 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
-    - e00: 0.1
+    - e00: 0.38444942
       e01: 0
       e02: 0
-      e03: 227.56677
+      e03: 135.18214
       e10: 0
-      e11: 0.1
+      e11: 0.38444942
       e12: 0
-      e13: 107.04324
+      e13: 67.65851
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.6404211
+      e01: 0
+      e02: 0
+      e03: -17.021057
+      e10: 0
+      e11: 0.6404211
+      e12: 0
+      e13: 56.359993
       e20: 0
       e21: 0
       e22: 1
@@ -662,23 +679,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 06d70000
-      m_LastClickedID: 55046
-      m_ExpandedIDs: 04cdffff0acdffffceceffff9cd5ffff62faffff44fbffffde37000038380000
+      m_SelectedIDs: 80b2ffff
+      m_LastClickedID: 0
+      m_ExpandedIDs: b492ffff2e93ffff9aecffff38fbffff38380000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: Wooden Chest (2)
+        m_OriginalName: Wooden Chest (2)
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -27980
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 2}
       m_SearchString: 
@@ -726,21 +743,21 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Lowpoly Wooden Chest/Animations
+    - Assets/Scripts
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 39
   m_LastFolders:
-  - Assets/Lowpoly Wooden Chest/Animations
+  - Assets/Scripts
   m_LastFoldersGridSize: 39
   m_LastProjectPath: D:\Unity_Projects\UnityGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 58.99997}
-    m_SelectedIDs: 8e420000
-    m_LastClickedID: 17038
-    m_ExpandedIDs: 00000000643e0000663e0000683e00006a3e00006c3e00006e3e0000703e0000723e0000743e0000763e0000783e00007a3e00007c3e00007e3e0000803e0000b83e000000ca9a3b
+    scrollPos: {x: 0, y: 118.99997}
+    m_SelectedIDs: ac400000
+    m_LastClickedID: 16556
+    m_ExpandedIDs: 000000003a3e00003c3e00003e3e0000403e0000423e0000443e0000463e0000483e00004a3e00004c3e00004e3e0000503e0000523e0000543e0000563e0000a240000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -768,7 +785,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000643e0000663e0000683e00006a3e00006c3e00006e3e0000703e0000723e0000743e0000763e0000783e00007a3e00007c3e00007e3e0000803e0000
+    m_ExpandedIDs: 000000003a3e00003c3e00003e3e0000403e0000423e0000443e0000463e0000483e00004a3e00004c3e00004e3e0000503e0000523e0000543e0000563e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -793,8 +810,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: e03a0000
-    m_LastClickedInstanceID: 15072
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: 26370000e040000012a0feff8449000000000000
     m_RenameOverlay:
@@ -856,7 +873,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 380.8
+  m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:

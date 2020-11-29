@@ -14,6 +14,7 @@ public class crate : MonoBehaviour
 
             GetComponent<Animator>().SetBool("open", mIsOpen);
         }
+    
     }
 
 

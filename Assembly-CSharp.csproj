@@ -57,14 +57,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\thirdpersoncameracontroller.cs" />
     <Compile Include="Assets\Scripts\crate.cs" />
     <Compile Include="Assets\Scripts\InventoryItemBase.cs" />
     <Compile Include="Assets\Scripts\CameraTurn.cs" />
     <Compile Include="Assets\Scripts\FollowTarget.cs" />
-    <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
+    <Compile Include="Assets\Scripts\collectitems.cs" />
+    <Compile Include="Assets\Scripts\playercollectitems.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Unity3D\2020.1.10f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
