@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class collectitems : MonoBehaviour
 {
+    public AudioClip coinsound;
     void Start()
     {
         
@@ -19,6 +20,7 @@ public class collectitems : MonoBehaviour
         if(other.name=="Player")
         {
             other.GetComponent<playercollectitems>().collectables++;
+            AudioSource.PlayClipAtPoint(coinsound, transform.position);
             Destroy(gameObject);
         }
     }
