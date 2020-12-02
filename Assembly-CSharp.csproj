@@ -61,14 +61,17 @@
     <Compile Include="Assets\Scripts\collectitems.cs" />
     <Compile Include="Assets\Scripts\thirdpersoncameracontroller.cs" />
     <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
+    <Compile Include="Assets\Scripts\musicm.cs" />
     <Compile Include="Assets\Scripts\crate.cs" />
     <Compile Include="Assets\Scripts\InventoryItemBase.cs" />
     <Compile Include="Assets\Scripts\CameraTurn.cs" />
     <Compile Include="Assets\Scripts\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\playercollectitems.cs" />
-    <Compile Include="Assets\Scripts\musicm.cs" />
+    <Compile Include="Assets\Scenes\SceneSwitch.cs" />
+    <Compile Include="Assets\Scenes\sceneswitch2.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\Samples\Terrain Tools\0.1.0-preview\Terrain Assets\ThirdPartyNotices.txt" />
      <None Include="Assets\AurynSky\Gems Ultimate Pack\READ ME.txt" />
     <Reference Include="UnityEngine">
       <HintPath>D:\Unity3D\2020.1.10f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
