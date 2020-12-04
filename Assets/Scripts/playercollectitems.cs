@@ -5,15 +5,6 @@ using UnityEngine;
 public class playercollectitems : MonoBehaviour
 {
     public int collectables = 0;
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
 
     private void OnGUI()
     {

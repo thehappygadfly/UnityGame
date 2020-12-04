@@ -4,23 +4,14 @@ using UnityEngine;
 
 public class collectitems : MonoBehaviour
 {
-    public AudioClip coinsound;
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    public AudioClip gemsound;
 
     private void OnTriggerEnter(Collider other)
     {
         if(other.name=="Player")
         {
             other.GetComponent<playercollectitems>().collectables++;
-            AudioSource.PlayClipAtPoint(coinsound, transform.position);
+            AudioSource.PlayClipAtPoint(gemsound, transform.position);
             Destroy(gameObject);
         }
     }

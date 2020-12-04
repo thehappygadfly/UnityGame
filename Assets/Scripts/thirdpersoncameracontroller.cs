@@ -5,19 +5,14 @@ using UnityEngine;
 
 public class thirdpersoncameracontroller : MonoBehaviour
 {
-    public float Cameraturnspeed = 0.5f;
+    public float Cameraturnspeed = 0.4f;
     public Transform Camerobject, Player;
     float mouseX, mouseY;
-    // Start is called before the first frame update
+
     void Start()
     {
         Cursor.visible = true;
         //Cursor.lockState = CursorLockMode.Locked;
-    }
-
-    private void LateUpdate()
-    {
-
     }
 
     private void Cameracontrol()
@@ -28,16 +23,16 @@ public class thirdpersoncameracontroller : MonoBehaviour
 
         transform.LookAt(Camerobject);
         
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            Player.rotation = Quaternion.Euler(mouseY, mouseX, 0.001f);
-        }
-        else
-        {
-            Player.rotation = Quaternion.Euler(mouseY, mouseX, 0.001f);
-            Player.rotation = Quaternion.Euler(0, mouseY, 0.001f);
+        //if (Input.GetKey(KeyCode.LeftShift))
+        //{
+        //    Player.rotation = Quaternion.Euler(mouseY, mouseX, 0.001f);
+        //}
+        //else
+        //{
+        //    Player.rotation = Quaternion.Euler(mouseY, mouseX, 0.001f);
+        //    Player.rotation = Quaternion.Euler(0, mouseY, 0.001f);
 
-        }
+        //}
             
 
     }
